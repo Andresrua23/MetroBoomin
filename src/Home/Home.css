@@ -1,0 +1,15 @@
+.banner{
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/spoty-d792b.appspot.com/o/metroban.webp?alt=media&token=c9bb589b-c9e9-45cc-94b5-c85042aae43e");
+    background-position: top center;
+    background-size: cover;
+    padding:25%;
+    background-attachment: fixed;
+}
+
+.banner2{
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/spoty-d792b.appspot.com/o/banmetro.jpg?alt=media&token=c3ef8cd9-0dc8-4e85-ad81-2c9c35337f43");
+    background-position: top center;
+    background-size: cover;
+    padding:25%;
+    background-attachment: fixed;
+}
