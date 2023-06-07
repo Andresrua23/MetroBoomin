@@ -1,3 +1,4 @@
+import "./Members.css"
 export function Members() {
 
     let integrantes = [
@@ -31,6 +32,16 @@ export function Members() {
         }
     ]
 
+    function quehagocuandosedeelevento(evento){
+        (evento.target.classList.add("blancoynegro"))
+    }
+    function quehagocuandosedeelotroevento(evento){
+        (evento.target.classList.remove("blancoynegro"))
+    }
+    function otroevento(evento){
+        (evento.target.classList.add("zoom"))
+    }
+
 
     //se mapean los objetos
 
@@ -46,7 +57,7 @@ export function Members() {
                                     <div className="card h-100 shadow">
                                         <h3 className="text-center fw-bold"> Nombre: {integrante.nombre} </h3>
                                         <h5 className="text-center fw-bold">Nacimiento: {integrante.nacimiento} </h5>
-                                        <img src={integrante.foto} alt="" className="img-fluid w-100" />
+                                        <img src={integrante.foto} alt="" className="img-fluid w-100" onClick={otroevento} onMouseOver={quehagocuandosedeelevento} onMouseLeave={quehagocuandosedeelotroevento}  />
                                         <h4 className="text-center fw-bold">Rol: {integrante.rol} </h4>
                                     </div>
                                 </div>

@@ -1,0 +1,7 @@
+.blancoynegro{
+filter: grayscale();
+}
+
+.zoom{
+    transform: scale(1.5);
+}
